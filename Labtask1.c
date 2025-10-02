@@ -1,27 +1,18 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
+    int n, i;
 
-int num1,num2;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
 
-printf("Enter your number1 \n");
-scanf("%d",&num1);
+    printf("Natural numbers from %d to 1 in reverse order:\n", n);
+    for (i = n; i >= 1; i--) {
+        printf("%d ", i);
+    }
 
-printf("Enter your number2 \n");
-scanf("%d",&num2);
-
-	
-for(int i = 1; i<num1; i++)
-{
-	num1+=num2;
-} 
-printf("your multiplied value %d \n", num1);
-
-while(num1>0)
-{
-num1 -= num2;
-  int count++;		
+    printf("\n");
+    return 0;
 }
 
 
@@ -46,6 +37,6 @@ num1 -= num2;
 
 
 
-
 }
+
 
